@@ -177,6 +177,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -246,6 +247,9 @@
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Delete.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\ProductTable.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -264,6 +268,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClothBazar.Database\ClothBazar.Database.csproj">
+      <Project>{BA72067B-7F44-4C9A-9095-1ACC2594366B}</Project>
+      <Name>ClothBazar.Database</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClothBazar.Entities\ClothBazar.Entities.csproj">
       <Project>{C9B9D7D1-2F24-4A10-AA3E-BCAC7ADB1F41}</Project>
       <Name>ClothBazar.Entities</Name>
